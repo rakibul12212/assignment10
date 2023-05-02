@@ -8,6 +8,8 @@ import About from "../Pages/About/About";
 import Blog from "../Pages/Blog/Blog";
 import Error from "../Pages/Error/Error";
 import Home from "../Pages/Home/Home";
+import SignIn from "../Pages/RegisterPage/SignIn/SignIn";
+import SignUp from "../Pages/RegisterPage/SignUp/SignUp";
   const router = createBrowserRouter([
     {
       path: "/",
@@ -23,21 +25,32 @@ import Home from "../Pages/Home/Home";
             element: <Blog />,
     
         },
+        
         {
             path: "/aboutus",
             element: <About />,
     
         },
         {
-          path: "/error",
-          element: <Error />,
+          path: "/signin",
+          element: <SignIn />,
   
       },
+      {
+        path: "/signup",
+        element: <SignUp/>,
+
+    },
+      
 
 
         
       ],
     },
+    {
+      path:'*',
+      element:<Error></Error>
+    }
   ]);
 
   export default router;
