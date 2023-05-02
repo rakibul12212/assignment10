@@ -10,7 +10,8 @@
         "2 cloves garlic, minced"
       ],
       "cookingMethod": "1. Cook spaghetti according to package directions. 2. In a separate bowl, combine ground beef, breadcrumbs, Parmesan cheese, and garlic. Mix well and form into meatballs. 3. Heat a large skillet over medium-high heat and cook meatballs until browned on all sides. 4. Add spaghetti to the skillet and toss with meatballs and sauce. Serve hot.",
-      "rating": 4.5
+      "rating": 4.9,
+      "picture": "https://images.pexels.com/photos/1527603/pexels-photo-1527603.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     },
     {
       "id": 2,
@@ -23,7 +24,8 @@
         "1/2 cup heavy cream"
       ],
       "cookingMethod": "1. In a large bowl, mix together chicken, yogurt, garam masala, and paprika. Let marinate for at least 30 minutes. 2. Heat a large skillet over medium-high heat and add chicken mixture. Cook until chicken is browned and cooked through. 3. Reduce heat to low and stir in heavy cream. Simmer for 10 minutes until sauce has thickened. Serve hot.",
-      "rating": 4.8
+      "rating": 4.8,
+      "picture": "https://images.pexels.com/photos/3386854/pexels-photo-3386854.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     },
     {
       "id": 3,
@@ -36,6 +38,7 @@
         "1/4 cup mustard"
       ],
       "cookingMethod": "1. Preheat grill or skillet to medium-high heat. 2. Form ground beef into four patties and season with salt and pepper. 3. Cook burgers for about 5-6 minutes per side or until cooked through. 4. Place cheese slices on burgers during the last minute of cooking. 5. Toast hamburger buns and spread ketchup and mustard on each. Place burger on bun and serve hot.",
-      "rating": 4.3
+      "rating": 4.5,
+      "picture": "https://images.pexels.com/photos/3616956/pexels-photo-3616956.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     }
   ]

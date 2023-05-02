@@ -2,7 +2,7 @@
     {
       "id": 1,
       "cuisine": "Italian",
-      "chefPictureUrl": "https://example.com/chef1.jpg",
+      "chefPictureUrl": "https://images.unsplash.com/photo-1595475038784-bbe439ff41e6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
       "chefName": "Mario Batali",
       "yearsOfExperience": 25,
       "numberOfRecipes": 150,
@@ -12,7 +12,7 @@
     {
       "id": 2,
       "cuisine": "Chinese",
-      "chefPictureUrl": "https://example.com/chef2.jpg",
+      "chefPictureUrl": "https://images.unsplash.com/photo-1559575003-fb4ee38a747d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=386&q=80",
       "chefName": "Martin Yan",
       "yearsOfExperience": 35,
       "numberOfRecipes": 200,
@@ -22,7 +22,7 @@
     {
       "id": 3,
       "cuisine": "Indian",
-      "chefPictureUrl": "https://example.com/chef3.jpg",
+      "chefPictureUrl": "https://images.unsplash.com/photo-1574966740637-12c84035a4f2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
       "chefName": "Madhur Jaffrey",
       "yearsOfExperience": 40,
       "numberOfRecipes": 300,
@@ -32,7 +32,7 @@
     {
       "id": 4,
       "cuisine": "Thai",
-      "chefPictureUrl": "https://example.com/chef4.jpg",
+      "chefPictureUrl": "https://images.unsplash.com/photo-1566554273541-37a9ca77b91f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
       "chefName": "Jet Tila",
       "yearsOfExperience": 20,
       "numberOfRecipes": 100,
@@ -42,7 +42,7 @@
     {
       "id": 5,
       "cuisine": "Japanese",
-      "chefPictureUrl": "https://example.com/chef5.jpg",
+      "chefPictureUrl": "https://images.unsplash.com/photo-1607631568010-a87245c0daf8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
       "chefName": "Masaharu Morimoto",
       "yearsOfExperience": 30,
       "numberOfRecipes": 250,
@@ -52,7 +52,7 @@
     {
       "id": 6,
       "cuisine": "Mexican",
-      "chefPictureUrl": "https://example.com/chef6.jpg",
+      "chefPictureUrl": "https://images.unsplash.com/photo-1543716627-839b54c40519?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
       "chefName": "Rick Bayless",
       "yearsOfExperience": 35,
       "numberOfRecipes": 175,
