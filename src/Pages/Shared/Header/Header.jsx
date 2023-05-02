@@ -9,8 +9,8 @@ const Header = () => {
     return (
         <div>
             {name}
-            <Link to='/'>home</Link>
-            <Link to='/blog'>blog</Link>
+            <Link to='/'>Home</Link>
+            <Link to='/blog'>Blog</Link>
         </div>
     );
 };
