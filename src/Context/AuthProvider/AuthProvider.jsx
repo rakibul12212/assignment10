@@ -29,6 +29,10 @@ const AuthProvider = ({children}) => {
         return createUserWithEmailAndPassword(auth,email,password)
     }
 
+    const signIn=(email,password)=>{
+        return signInWithEmailAndPassword(auth,email,password)
+    }
+
     const updateUser=(profile)=>{
         return updateProfile(auth.currentUser,profile)
     }
@@ -37,7 +41,7 @@ const AuthProvider = ({children}) => {
         return signOut(auth)
     }
 
-    const authInfo={user, googleProvider,logOut,signUp,updateUser}
+    const authInfo={user, googleProvider,logOut,signUp,updateUser,signIn}
 
     return (
         <AuthContext.Provider value={authInfo}>{children}</AuthContext.Provider>

@@ -2,10 +2,11 @@ import React from 'react';
 import { useContext } from 'react';
 import { AuthContext } from '../../../Context/AuthProvider/AuthProvider';
 import { GoogleAuthProvider } from "firebase/auth";
+import { Navigate, useNavigate } from 'react-router-dom';
 
 const provider = new GoogleAuthProvider();
 const SignUp = () => {
-
+const navigate=useNavigate()
     const {googleProvider,signUp,updateUser}=useContext(AuthContext)
     
     const handleGoogleSignIn=()=> {
@@ -21,7 +22,7 @@ const SignUp = () => {
       event.preventDefault();
       const form = event.target;
       const name = form.name.value;
-      const photoUrl = form.photoUrl.value;
+      const photoURL = form.photoURL.value;
       const email = form.email.value;
       const password = form.password.value;
   
@@ -32,7 +33,7 @@ const SignUp = () => {
   
         const userProfile = {
           displayName: name,
-          photoUrl: photoUrl
+          photoURL: photoURL
         };
   
         updateUser(userProfile)
@@ -43,6 +44,7 @@ const SignUp = () => {
         .catch(error => console.error(error));
   
         form.reset();
+       navigate('/')
         
       })
       .catch(error => console.error(error));
@@ -73,7 +75,7 @@ const SignUp = () => {
           <label className="label">
             <span className="label-text">Photo url</span>
           </label>
-          <input type="text" name='photoUrl' placeholder="photo url" className="input input-bordered" />
+          <input type="text" name='photoURL' placeholder="photo url" className="input input-bordered" />
         </div>
         <div className="form-control">
           <label className="label">
