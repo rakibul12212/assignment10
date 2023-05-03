@@ -10,6 +10,7 @@ import Chefs from "../Pages/chefs/chefs";
 import ChefsDetails from "../Pages/ChefsDetails/ChefsDetails";
 import Contact from "../Pages/Contact/Contact";
 import Error from "../Pages/Error/Error";
+import Favrecipe from "../Pages/Favrecipe/Favrecipe";
 
 import Home from "../Pages/Home/Home";
 import SignIn from "../Pages/RegisterPage/SignIn/SignIn";
@@ -21,21 +22,28 @@ import SignUp from "../Pages/RegisterPage/SignUp/SignUp";
       children: [
         {
           path: "/",
-          element: <Home />,
+          element: <Home />,  
+        },
+        {
+          path: "/chef",
           element: <Chefs />,
-         
-
+        },
+        {
+          path:"/chef/:id",
+          loader:({params})=>fetch(`http://localhost:8000/chefs/${params.id}`),
+          element: <ChefsDetails />
+        },
+        {
+          path:"/favrecipe/:id",
+          loader:({params})=>fetch(`http://localhost:8000/recipes/${params.id}`),
+          element: <Favrecipe></Favrecipe>
         },
         {
             path: "/blog",
             element: <Blog />,
     
         },
-        {
-          path: "/chefsdetails",
-          element: <ChefsDetails />,
-  
-      },
+        
         
         {
             path: "/aboutus",
