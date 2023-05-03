@@ -50,7 +50,7 @@ const SignUp = () => {
           
         </div>
         <div className="form-control mt-6">
-          <button className="btn btn-primary">Sign Up</button>
+          <button className="rounded shadow shadow-cyan-600  px-4 py-2 hover:bg-cyan-600 hover:text-whites">Sign Up</button>
         </div>
         <button onClick={handleGoogleSignIn} className='rounded shadow shadow-cyan-600  px-4 py-2 hover:bg-cyan-600 hover:text-white'>Sign up with google</button>
       </form>

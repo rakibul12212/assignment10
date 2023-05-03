@@ -40,7 +40,7 @@ const SignIn = () => {
           </label>
         </div>
         <div className="form-control mt-6">
-          <button className="btn btn-primary">Login</button>
+          <button className="rounded shadow shadow-cyan-600  px-4 py-2 hover:bg-cyan-600 hover:text-white">Login</button>
         </div>
         <button onClick={handleGoogleSignIn} className='rounded shadow shadow-cyan-600  px-4 py-2 hover:bg-cyan-600 hover:text-white'>Sign in with google</button>
       </form>

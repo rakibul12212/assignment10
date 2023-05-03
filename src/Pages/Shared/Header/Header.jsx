@@ -15,14 +15,14 @@ const Header = () => {
         <div className='flex lg:flex-row flex-col p-2 justify-between'>
             <div className='w-7 h-10 flex '>
              <img src="https://upload.wikimedia.org/wikipedia/en/4/44/MasterChef_Logo.svg" alt="Example" />
-             <Link to="/" className='head-title link p-2 border-none'>Chefsmate</Link>
+             <Link to="/" className='head-title link p-2 border-none text-bold text-xl'><span className='text-cyan-600'>Chefs</span><sub className='text-cyan-800'>mate</sub></Link>
             </div>
             
             <div className="flex lg:flex-row flex-col gap-6 items-center ">
               <div className='flex gap-3'>
-              <Link to='/' className="block sm:inline-block   text-center text-sm">Home</Link>
-               <Link to='/blog' className="block sm:inline-block   text-center text-sm">Blog</Link>
-               <Link to='/aboutus' className="block sm:inline-block   text-center text-sm">About Us</Link>
+              <Link to='/' className="block sm:inline-block   text-center text-sm hover:text-cyan-600  ">Home</Link>
+               <Link to='/blog' className="block sm:inline-block   text-center text-sm hover:text-cyan-600">Blog</Link>
+               <Link to='/aboutus' className="block sm:inline-block   text-center text-sm hover:text-cyan-600">About Us</Link>
               </div>
             <div>
             {
@@ -33,8 +33,8 @@ const Header = () => {
                 </div>
                 :
                 <div className='flex gap-2'>
-                    <Link to='/signin' className="block sm:inline-block  text-center text-sm">Sign In</Link>
-                    <Link to='/signup' className="block sm:inline-block  text-center text-sm">Sign Up</Link>
+                    <Link to='/signin' className="block sm:inline-block  text-center text-sm rounded shadow shadow-cyan-600  px-4 py-2 hover:bg-cyan-600 hover:text-white">Sign In</Link>
+                    <Link to='/signup' className="block sm:inline-block  text-center text-sm rounded shadow shadow-cyan-600  px-4 py-2 hover:bg-cyan-600 hover:text-white">Sign Up</Link>
               
                 </div>
 
