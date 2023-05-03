@@ -8,6 +8,7 @@ import About from "../Pages/About/About";
 import Blog from "../Pages/Blog/Blog";
 import Chefs from "../Pages/chefs/chefs";
 import Error from "../Pages/Error/Error";
+
 import Home from "../Pages/Home/Home";
 import SignIn from "../Pages/RegisterPage/SignIn/SignIn";
 import SignUp from "../Pages/RegisterPage/SignUp/SignUp";
@@ -20,6 +21,7 @@ import SignUp from "../Pages/RegisterPage/SignUp/SignUp";
           path: "/",
           element: <Home />,
           element: <Chefs />,
+         
 
         },
         {

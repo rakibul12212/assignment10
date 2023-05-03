@@ -12,7 +12,7 @@ const Header = () => {
     }
 
     return ( 
-        <div className='flex lg:flex-row flex-col p-2 justify-between'>
+        <div className='flex lg:flex-row flex-col p-2 justify-between bg-slate-100'>
             <div className='w-7 h-10 flex '>
              <img src="https://upload.wikimedia.org/wikipedia/en/4/44/MasterChef_Logo.svg" alt="Example" />
              <Link to="/" className='head-title link p-2 border-none text-bold text-xl'><span className='text-cyan-600'>Chefs</span><sub className='text-cyan-800'>mate</sub></Link>
