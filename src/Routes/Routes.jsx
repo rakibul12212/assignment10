@@ -7,6 +7,7 @@ import About from "../Pages/About/About";
 
 import Blog from "../Pages/Blog/Blog";
 import Chefs from "../Pages/chefs/chefs";
+import ChefsDetails from "../Pages/ChefsDetails/ChefsDetails";
 import Contact from "../Pages/Contact/Contact";
 import Error from "../Pages/Error/Error";
 
@@ -30,6 +31,11 @@ import SignUp from "../Pages/RegisterPage/SignUp/SignUp";
             element: <Blog />,
     
         },
+        {
+          path: "/chefsdetails",
+          element: <ChefsDetails />,
+  
+      },
         
         {
             path: "/aboutus",

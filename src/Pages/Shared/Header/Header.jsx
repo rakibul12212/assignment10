@@ -24,6 +24,7 @@ const Header = () => {
                <Link to='/blog' className="block sm:inline-block   text-center text-sm hover:text-cyan-600">Blog</Link>
                <Link to='/aboutus' className="block sm:inline-block   text-center text-sm hover:text-cyan-600">About Us</Link>
                <Link to='/contact' className="block sm:inline-block   text-center text-sm hover:text-cyan-600">Contact</Link>
+               <Link to='/chefsdetails' className="block sm:inline-block   text-center text-sm hover:text-cyan-600">chefdetails</Link>
               </div>
             <div>
             {

@@ -5,10 +5,6 @@ const Home = (props) => {
     const{id,shortBio,chefPictureUrl,cuisine,chefName,yearsOfExperience,numberOfRecipes,likes} =props.chefs;
     return (
         <div>
-         
-
-          
-
 
           <div className='p-10'>
             <div className="card lg:card-side bg-gray-100 shadow-xl justify-center p-20 ">
@@ -21,6 +17,7 @@ const Home = (props) => {
                     <p>Year of Experience: <span className='text-bold'>{yearsOfExperience}</span></p>
                     <p>Number of Recipes: <span className='text-bold'>{numberOfRecipes}</span></p>
                     <p>Number of Like: <span className='text-bold'>{likes}</span></p>
+                    
                   
 
                   <div className="card-actions justify-end">

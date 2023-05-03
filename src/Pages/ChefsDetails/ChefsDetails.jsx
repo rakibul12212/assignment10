@@ -1,7 +1,7 @@
 import React from 'react';
 
-const Recipe = () => {
-   
+const ChefsDetails = () => {
+ 
     return (
         <div>
            
@@ -9,4 +9,4 @@ const Recipe = () => {
     );
 };
 
-export default Recipe;
+export default ChefsDetails;

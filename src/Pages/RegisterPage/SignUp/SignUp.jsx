@@ -6,7 +6,7 @@ import { GoogleAuthProvider } from "firebase/auth";
 const provider = new GoogleAuthProvider();
 const SignUp = () => {
 
-    const {googleProvider}=useContext(AuthContext)
+    const {googleProvider,signUp,updateUser}=useContext(AuthContext)
     
     const handleGoogleSignIn=()=> {
         googleProvider(provider)
@@ -16,6 +16,39 @@ const SignUp = () => {
         })
         .catch(err=>console.error(err))
     }
+
+    const handleUserSignUp = (event) => {
+      event.preventDefault();
+      const form = event.target;
+      const name = form.name.value;
+      const photoUrl = form.photoUrl.value;
+      const email = form.email.value;
+      const password = form.password.value;
+  
+      signUp(email, password)
+      .then(result => {
+        const user = result.user;
+        console.log(user);
+  
+        const userProfile = {
+          displayName: name,
+          photoUrl: photoUrl
+        };
+  
+        updateUser(userProfile)
+        .then(result => {
+          const user = result;
+          console.log(user);
+        })
+        .catch(error => console.error(error));
+  
+        form.reset();
+        
+      })
+      .catch(error => console.error(error));
+    };
+  
+
     return (
         <div className='flex flex-col max-w-screen  mx-auto'>
 
@@ -23,7 +56,7 @@ const SignUp = () => {
   <div className="hero-content flex-col lg:flex-row-reverse">
    
     <div className="card flex-shrink-0  max-w-md shadow-2xl bg-base-100">
-      <form className="card-body">
+      <form onSubmit={handleUserSignUp} className="card-body">
       <div className="form-control">
           <label className="label">
             <span className="label-text">Name</span>
