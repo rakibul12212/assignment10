@@ -15,7 +15,7 @@ const Header = () => {
         <div className='flex lg:flex-row flex-col p-2 justify-between bg-slate-100'>
             <div className='w-7 h-10 flex '>
              <img src="https://upload.wikimedia.org/wikipedia/en/4/44/MasterChef_Logo.svg" alt="Example" />
-             <Link to="/" className='head-title link p-2 border-none text-bold text-xl'><span className='text-cyan-600'>Chefs</span><sub className='text-cyan-800'>mate</sub></Link>
+             <Link to="/" className='head-title link p-2 border-none text-bold text-xl'><span className='text-cyan-600'>Chefs</span><sub className='text-cyan-800'>mate.</sub></Link>
             </div>
             
             <div className="flex lg:flex-row flex-col gap-6 items-center ">
@@ -23,6 +23,7 @@ const Header = () => {
               <Link to='/' className="block sm:inline-block   text-center text-sm hover:text-cyan-600  ">Home</Link>
                <Link to='/blog' className="block sm:inline-block   text-center text-sm hover:text-cyan-600">Blog</Link>
                <Link to='/aboutus' className="block sm:inline-block   text-center text-sm hover:text-cyan-600">About Us</Link>
+               <Link to='/contact' className="block sm:inline-block   text-center text-sm hover:text-cyan-600">Contact</Link>
               </div>
             <div>
             {

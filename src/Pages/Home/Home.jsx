@@ -21,6 +21,8 @@ const Home = (props) => {
                     <p>Year of Experience: <span className='text-bold'>{yearsOfExperience}</span></p>
                     <p>Number of Recipes: <span className='text-bold'>{numberOfRecipes}</span></p>
                     <p>Number of Like: <span className='text-bold'>{likes}</span></p>
+                  
+
                   <div className="card-actions justify-end">
                    <button  className='rounded shadow shadow-cyan-600  px-4 py-2 hover:bg-cyan-600 hover:text-white'>View Recipes</button>
                   </div>

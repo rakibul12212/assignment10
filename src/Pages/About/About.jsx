@@ -1,20 +1,22 @@
 import React from 'react';
 
 const About = () => {
-    return (
-        <div>
-            {/* <h1>ChefsMate is a website designed to connect chefs and food enthusiasts. Whether you're a professional chef, an aspiring home cook, or simply someone who loves good food, ChefsMate provides a platform for you to share your passion for food and connect with others who share your interests.
-
-At ChefsMate, you'll find a vast array of recipes, cooking tips, and techniques to help you elevate your culinary skills. Our community of food lovers and professionals are always ready to share their knowledge, advice, and experience to help you create delicious meals that will impress your friends and family.
-
-Whether you're looking to learn new recipes, get advice on how to cook a particular dish, or simply connect with other foodies, ChefsMate has everything you need to take your culinary journey to the next level. So why wait? Join us today and discover the joy of cooking like never before!</h1> */}
-<div class="bg-auto bg-no-repeat bg-center   card lg:card-side bg-gray-100 shadow-xl justify-center"><h1 className='p-20 '>ChefsMate is a website designed to connect chefs and food enthusiasts. Whether you're a professional chef, an aspiring home cook, or simply someone who loves good food, ChefsMate provides a platform for you to share your passion for food and connect with others who share your interests.
-
-At ChefsMate, you'll find a vast array of recipes, cooking tips, and techniques to help you elevate your culinary skills. Our community of food lovers and professionals are always ready to share their knowledge, advice, and experience to help you create delicious meals that will impress your friends and family.
-
-Whether you're looking to learn new recipes, get advice on how to cook a particular dish, or simply connect with other foodies, ChefsMate has everything you need to take your culinary journey to the next level. So why wait? Join us today and discover the joy of cooking like never before!</h1></div>
+  return (
+    <section className="bg-slate-200">
+      <div className="container mx-auto py-10 px-6 lg:px-8">
+        <div className="flex flex-col lg:flex-row items-center">
+          <div className="lg:w-1/2 lg:pr-10">
+            <h2 className="text-3xl font-bold mb-4">About Us</h2>
+            <p className="mb-4">We are a team of passionate food lovers who believe that cooking should be fun, easy, and accessible to everyone. Our mission is to provide you with the best recipes, tips, and advice to help you create delicious and healthy meals at home.</p>
+            <p className="mb-4">Our website is dedicated to helping you discover new recipes, learn new cooking techniques, and connect with other foodies from around the world. Whether you're a beginner or an experienced cook, we have something for everyone.</p>
+          </div>
+          <div className="lg:w-1/2">
+            <img className="w-full rounded shadow-md" src="https://images.pexels.com/photos/5050827/pexels-photo-5050827.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="About Us" />
+          </div>
         </div>
-    );
+      </div>
+    </section>
+  );
 };
 
 export default About;
