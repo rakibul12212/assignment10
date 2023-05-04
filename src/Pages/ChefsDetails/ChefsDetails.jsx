@@ -32,7 +32,7 @@ const ChefsDetails = () => {
   </div>
 </div>
           </div>
-          <div>
+          <div className='flex flex-row'>
             {
                 recipes.map(recipe=><Recipes
                 key={recipe.id}

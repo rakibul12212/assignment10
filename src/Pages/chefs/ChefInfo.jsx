@@ -8,7 +8,7 @@ const ChefInfo = (props) => {
             <div className='p-10'>
             <div className="card lg:card-side bg-gray-100 shadow-xl justify-center p-20 ">
                 <figure>
-                 <img src={chefPictureUrl} alt="Album"/>
+                 <img  src={chefPictureUrl} alt="Album"/>
                 </figure>
                <div className="card-body">
                     <h1 className="card-title text-2xl">{chefName}</h1>
