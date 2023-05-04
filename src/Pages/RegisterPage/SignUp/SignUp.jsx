@@ -25,8 +25,10 @@ const navigate=useNavigate()
       const photoURL = form.photoURL.value;
       const email = form.email.value;
       const password = form.password.value;
-        
-        if (!email || !password) {
+
+
+
+      if (!email || !password) {
         alert("Please enter an email and password");
         return;
       }
@@ -34,6 +36,9 @@ const navigate=useNavigate()
         alert("Password must be at least 6 characters long");
         return;
       }
+
+
+
   
       signUp(email, password)
       .then(result => {
