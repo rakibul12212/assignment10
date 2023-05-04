@@ -3,7 +3,8 @@
  * firebase install
  * firebase config file setup
  * context api implement
- * fake data create
+ * two json file create on server
+ * deploy in firebase
  * 
  * 
  * 

@@ -6,7 +6,7 @@ const Favrecipe = () => {
     const {id,name,ingredients,cookingMethod,rating,picture}=favrecipe
     return (
         <div>
-            {/* <p>{rating}</p> */}
+            
             <div className="card w-96 bg-base-100 shadow-xl ">
                <figure><img src={picture} alt="Shoes" /></figure>
                <div className="card-body">

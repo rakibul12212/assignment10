@@ -1,6 +1,6 @@
 import React from 'react';
 import { useContext } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { AuthContext } from '../../../Context/AuthProvider/AuthProvider';
 
 const Header = () => {
@@ -14,16 +14,16 @@ const Header = () => {
     return ( 
         <div className='flex lg:flex-row flex-col p-2 justify-between bg-slate-100'>
             <div className='w-7 h-10 flex '>
-             <img src="https://upload.wikimedia.org/wikipedia/en/4/44/MasterChef_Logo.svg" alt="Example" />
-             <Link to="/" className='head-title link p-2 border-none text-bold text-xl'><span className='text-cyan-600'>Chefs</span><sub className='text-cyan-800'>mate.</sub></Link>
+             <img src="https://upload.wikimedia.org/wikipedia/en/4/44/MasterChef_Logo.svg" alt="logo" />
+             <NavLink to="/" className='head-title link p-2 border-none text-bold text-xl'><span className='text-cyan-600'>Chefs</span><sub className='text-cyan-800'>mate.</sub></NavLink>
             </div>
             
             <div className="flex lg:flex-row flex-col gap-6 items-center ">
               <div className='flex gap-3'>
-              <Link to='/' className="block sm:inline-block   text-center text-sm hover:text-cyan-600  ">Home</Link>
-               <Link to='/blog' className="block sm:inline-block   text-center text-sm hover:text-cyan-600">Blog</Link>
-               <Link to='/aboutus' className="block sm:inline-block   text-center text-sm hover:text-cyan-600">About Us</Link>
-               <Link to='/contact' className="block sm:inline-block   text-center text-sm hover:text-cyan-600">Contact</Link>
+              <NavLink to='/' className={({isActive})=>(isActive ? "bg-gray-400 px-2 py-1 text-sm rounded text-white":"block sm:inline-block   text-center text-sm hover:text-cyan-600 ")}  >Home</NavLink>
+               <NavLink to='/blog' className={({isActive})=>(isActive ? "bg-gray-400 px-2 py-1 text-sm rounded text-white":"block sm:inline-block   text-center text-sm hover:text-cyan-600 ")}>Blog</NavLink>
+               <NavLink to='/aboutus' className={({isActive})=>(isActive ? "bg-gray-400 px-2 py-1 text-sm rounded text-white":"block sm:inline-block   text-center text-sm hover:text-cyan-600 ")}>About Us</NavLink>
+               <NavLink to='/contact' className={({isActive})=>(isActive ? "bg-gray-400 px-2 py-1 text-sm rounded text-white":"block sm:inline-block   text-center text-sm hover:text-cyan-600 ")}>Contact</NavLink>
               
               </div>
             <div>
@@ -35,8 +35,8 @@ const Header = () => {
                 </div>
                 :
                 <div className='flex gap-2'>
-                    <Link to='/signin' className="block sm:inline-block  text-center text-sm rounded shadow shadow-cyan-600  px-4 py-2 hover:bg-cyan-600 hover:text-white">Sign In</Link>
-                    <Link to='/signup' className="block sm:inline-block  text-center text-sm rounded shadow shadow-cyan-600  px-4 py-2 hover:bg-cyan-600 hover:text-white">Sign Up</Link>
+                    <NavLink to='/signin' className="block sm:inline-block  text-center text-sm rounded shadow shadow-cyan-600  px-4 py-2 hover:bg-cyan-600 hover:text-white">Sign In</NavLink>
+                    <NavLink to='/signup' className="block sm:inline-block  text-center text-sm rounded shadow shadow-cyan-600  px-4 py-2 hover:bg-cyan-600 hover:text-white">Sign Up</NavLink>
               
                 </div>
 

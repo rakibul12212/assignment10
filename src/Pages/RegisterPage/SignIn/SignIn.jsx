@@ -3,11 +3,12 @@ import { useContext } from 'react';
 import { AuthContext } from '../../../Context/AuthProvider/AuthProvider';
 import { GoogleAuthProvider } from "firebase/auth";
 import { useNavigate } from 'react-router-dom';
+import Loading from '../../Shared/Loading';
 
 const provider = new GoogleAuthProvider();
 const SignIn = () => {
 
-    const {googleProvider,signIn}=useContext(AuthContext)
+    const {googleProvider,signIn,loading}=useContext(AuthContext)
     const navigate=useNavigate()
     
     const handleGoogleSignIn=()=> {
@@ -34,7 +35,9 @@ const SignIn = () => {
       })
       .catch(error => console.error(error));
     };
-
+if(loading){
+  return <Loading></Loading>
+}
     return (
         <div className='flex flex-col max-w-screen  mx-auto'>
 
