@@ -20,7 +20,7 @@ const ChefInfo = (props) => {
                   
 
                   <div className="card-actions justify-end">
-                   <Link to={`/chefs/${id}`}><button  className='rounded shadow shadow-cyan-600  px-4 py-2 hover:bg-cyan-600 hover:text-white'>View Recipes</button></Link>
+                   <Link to={`/chef/${id}`}><button  className='rounded shadow shadow-cyan-600  px-4 py-2 hover:bg-cyan-600 hover:text-white'>View Recipes</button></Link>
                   </div>
               </div>
             </div>
