@@ -30,12 +30,12 @@ import SignUp from "../Pages/RegisterPage/SignUp/SignUp";
         },
         {
           path:"/chef/:id",
-          loader:({params})=>fetch(`http://localhost:8000/chefs/${params.id}`),
+          loader:({params})=>fetch(`https://chefs-mate-server-rakibul12212.vercel.app/chefs/${params.id}`),
           element: <ChefsDetails />
         },
         {
           path:"/favrecipe/:id",
-          loader:({params})=>fetch(`http://localhost:8000/recipes/${params.id}`),
+          loader:({params})=>fetch(`https://chefs-mate-server-rakibul12212.vercel.app/recipes/${params.id}`),
           element: <Favrecipe></Favrecipe>
         },
         {

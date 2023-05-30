@@ -8,7 +8,7 @@ const Chefs = () => {
 
     const [chefs,setChefs]=useState([]);
     useEffect(()=>{
-        fetch('http://localhost:8000/chefs')
+        fetch('https://chefs-mate-server-rakibul12212.vercel.app/chefs')
         .then(res => res.json())
         .then(data => setChefs(data))
 

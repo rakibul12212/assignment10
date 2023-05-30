@@ -6,7 +6,7 @@ const ChefsDetails = () => {
  const chefDetails=useLoaderData()
  const [recipes,setRecipes]=useState([]);
     useEffect(()=>{
-        fetch('http://localhost:8000/recipes')
+        fetch('https://chefs-mate-server-rakibul12212.vercel.app/recipes')
         .then(res => res.json())
         .then(data => setRecipes(data))
 
