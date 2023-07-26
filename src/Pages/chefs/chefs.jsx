@@ -17,27 +17,11 @@ const Chefs = () => {
     
     return (
         <div>
-             
-
-<div className="hero min-h-screen" style={{ backgroundImage: `url("https://images.pexels.com/photos/4021973/pexels-photo-4021973.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")` }}>
-  <div className="hero-overlay bg-opacity-10"></div>
-  <div className="hero-content text-center text-neutral-content">
-    <div className="max-w-md">
-      <h1 className="mb-5 text-5xl font-bold"><span className='text-cyan-600'>Chefs</span><sub className='text-cyan-800'>mate.</sub></h1>
-      <p className="mb-0 text-xl ">Welcome to ChefsMate, the ultimate platform for food enthusiasts and chefs alike. Whether you're a professional chef or simply love to cook, we've got everything you need to take your culinary skills to the next level. With a vast array of recipes, expert tips, and a community of passionate foodies, ChefsMate is your one-stop-shop for all things food. Join us today and discover the joy of cooking like never before!</p>
-      
-    </div>
-  </div>
-</div>
             {
             chefs.map(chefs=><ChefInfo 
                 key={chefs.id}
                 chefs={chefs}></ChefInfo>)
             }
-            
-
-
-           
             <div className="container mx-auto p-20 bg-slate-200">
       <h1 className="text-4xl font-bold mb-8">Contact Us</h1>
       <form className="max-w-lg mx-auto">

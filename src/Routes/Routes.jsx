@@ -4,14 +4,13 @@ import {
   } from "react-router-dom";
 import Main from "../Layout/Main";
 import About from "../Pages/About/About";
-
+import Banner from "../Pages/Banner/Banner";
 import Blog from "../Pages/Blog/Blog";
 import Chefs from "../Pages/chefs/chefs";
 import ChefsDetails from "../Pages/ChefsDetails/ChefsDetails";
 import Contact from "../Pages/Contact/Contact";
 import Error from "../Pages/Error/Error";
 import Favrecipe from "../Pages/Favrecipe/Favrecipe";
-
 import Home from "../Pages/Home/Home";
 import SignIn from "../Pages/RegisterPage/SignIn/SignIn";
 import SignUp from "../Pages/RegisterPage/SignUp/SignUp";
@@ -23,6 +22,10 @@ import SignUp from "../Pages/RegisterPage/SignUp/SignUp";
         {
           path: "/",
           element: <Home />,  
+        },
+        {
+          path: "/banner",
+          element: <Banner />, 
         },
         {
           path: "/chef",
